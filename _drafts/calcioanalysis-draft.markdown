@@ -34,11 +34,61 @@ for i,cal in enumerate(df_cal.iterrows()):
 	#read only the first 10 matches
     if i == 9: break
         
-print teams_a {% endhighlight %}
-As the rows in the dataframe represent a match, it's sufficient to read the first 10 rows to get the names of all teams in serie A.
+print teams_a 
+{% endhighlight %}
+
+As the rows in the dataframe represent a match, it's sufficient to read the first 10 rows to get the names of all teams in serie A (20 teams).
 We loop on the rows of the dataframe, extract the Home and Away team and append them to our team list.   
 
+From here we can start showing all different types of correlations between, for example, the points scored by a team and the number of shots on target. 
+To extract the number of shots made we can do the following:
+  
+{% highlight python %}
+    for team in teams:
+        team_home = df[df['HomeTeam']==team]
+        team_away = df[df['AwayTeam']==team]
+        #shots made
+        team_s    = team_away["AS"].sum()  + team_home["HS"].sum()
+{% endhighlight %}
+
+Here, we read the dataframe *df* and extract the rows where the name of the home or away team is the correct one. We save these as two separate dataframes (one for the matches where the team played away, the other for the matches where the team played home). 
+We then read the column "AS" (away shots) in the case of away matches and the column "HS" in the case of home matches. Sum all values and we found out the number of shots of that team in the season. 
+If we repeat this step for all teams we can build a simple dataframe that looks like this table:
+
+|   | Team	   | Shots |
+| 0	| Inter	   | 120   |
+| 1	| Juventus | 150   |
+| 2	| Milan	   | 130   | 
+| 3	| Napoli   | 160   |
+
+It is interesitng to add to this table a cloumn showing the number of points made by each of these teams in the season and see if there is a correlation between the number of points and the shots made. 
+It is very simple to do and here is the snippet of code I used to do this:
+{% highlight python %}
+for team in teams:
+        t      = df[(df['HomeTeam']==team) | (df['AwayTeam']==team)]
+        team_home = df[df['HomeTeam']==team]
+        team_away = df[df['AwayTeam']==team]
+        team_h_win = len(team_home[team_home['FTHG']>team_home['FTAG']])
+        team_a_win = len(team_away[team_away['FTAG']>team_away['FTHG']])
+        team_draw = len(t[t['FTAG']==t['FTHG']])
+        team_points = 3*team_a_win + 3*team_h_win + team_draw
+{% endhighlight %}
+
+The idea here is similar as before. Extract the rows with the team playing away or home, count the number of wins of the team by selecting the rows where the home team scores more goals then the away team and viceversa. Do not forget to account for draws. Finally sum the number of draws with the number of won matches multiplied by three. 
+So we can have a table like this now:
+
+|   | Team	   | Shots | Points |
+| 0	| Inter	   | 120   | 60     |
+| 1	| Juventus | 150   | 80     |
+| 2	| Milan	   | 130   | 70     |
+| 3	| Napoli   | 160   | 75     |
+
+It turns out that there is quite a correlation between the number of points and the number of shots, at least for serie A 2015/2016 season. 
+
+  
+
 # Data aggregation
+
 The team's name is not really interesting, we just want to get the number of teams that play in a certain region, per serie. 
 
 In order to create the groups we just do:
