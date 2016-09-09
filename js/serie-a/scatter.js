@@ -1,16 +1,16 @@
 //var data = [[5,3], [10,17], [15,4], [2,8]];
-d3.csv("teamdata.csv", function(error, data){
+d3.csv("proc_data_it_test.csv", function(error, data){
    
     var margin = {top: 50, right: 50, bottom: 50, left: 50}
       , width = 600 - margin.left - margin.right
       , height = 600 - margin.top - margin.bottom;
     
     var x = d3.scale.linear()
-              .domain([0, d3.max(data, function(d) { return +d["iii"]; })])
+              .domain([d3.min(data, function(d) { return +d["shots"];}) , d3.max(data, function(d) { return +d["shots"]; })])
               .range([0, width ]);
     
     var y = d3.scale.linear()
-    	      .domain([0, d3.max(data, function(d) { return +d["total"]; })])
+    	      .domain([d3.min(data, function(d) { return +d["points"];}), d3.max(data, function(d) { return +d["points"]; })])
     	      .range([height, 0 ]);
  
 	
@@ -57,14 +57,14 @@ d3.csv("teamdata.csv", function(error, data){
     g.selectAll("scatter-dots")
       .data(data)
       .enter().append("svg:circle")
-          .attr("cx", function (d,i) { return x(+d["iii"]); } )
-          .attr("cy", function (d) { return y(+d["total"]); } )
-          .attr("r", 5)
+          .attr("cx", function (d,i) { return x(+d["shots"]); } )
+          .attr("cy", function (d) { return y(+d["points"]); } )
+          .attr("r", 8)
 		  .on("mouseover", function(d) {		
             div.transition()		
                 .duration(200)		
                 .style("opacity", .8);		
-            div.html(d.region)	
+            div.html(d["team"])	
                 .style("left", (d3.event.pageX) + "px")		
                 .style("top", (d3.event.pageY - 28) + "px");	
             })					
