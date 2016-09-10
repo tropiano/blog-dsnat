@@ -6,11 +6,11 @@ d3.csv("proc_data_it_test.csv", function(error, data){
       , height = 600 - margin.top - margin.bottom;
     
     var x = d3.scale.linear()
-              .domain([d3.min(data, function(d) { return +d["shots"];}) , d3.max(data, function(d) { return +d["shots"]; })])
+              .domain([d3.min(data, function(d) { return +d["shots"];})-10 , d3.max(data, function(d) { return +d["shots"]; })])
               .range([0, width ]);
     
     var y = d3.scale.linear()
-    	      .domain([d3.min(data, function(d) { return +d["points"];}), d3.max(data, function(d) { return +d["points"]; })])
+    	      .domain([d3.min(data, function(d) { return +d["points"];})-10, d3.max(data, function(d) { return +d["points"]; })])
     	      .range([height, 0 ]);
  
 	
@@ -64,7 +64,7 @@ d3.csv("proc_data_it_test.csv", function(error, data){
             div.transition()		
                 .duration(200)		
                 .style("opacity", .8);		
-            div.html(d["team"])	
+            div.html("<b>"+d["team"]+"</b>"+"</br>"+d["points"]+" points")	
                 .style("left", (d3.event.pageX) + "px")		
                 .style("top", (d3.event.pageY - 28) + "px");	
             })					
