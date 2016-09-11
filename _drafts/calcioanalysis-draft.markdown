@@ -61,7 +61,8 @@ If we repeat this step for all teams we can build a simple dataframe that looks 
 | 2	| Milan	   | 130   | 
 | 3	| Napoli   | 160   |
 
-It is interesitng to add to this table a cloumn showing the number of points made by each of these teams in the season and see if there is a correlation between the number of points and the shots made. 
+<br/>
+It is interesting to add to this table a cloumn showing the number of points made by each of these teams in the season and see if there is a correlation between the number of points and the shots made. 
 It is very simple to do and here is the snippet of code I used to do this:
 {% highlight python %}
 for team in teams:
@@ -83,64 +84,59 @@ So we can have a table like this now:
 | 2	| Milan	   | 130   | 70     |
 | 3	| Napoli   | 160   | 75     |
 
+<br/>
 It turns out that there is quite a correlation between the number of points and the number of shots, at least for serie A 2015/2016 season. 
+<iframe src="{{site.baseurl}}/js/serie-a/scatter.html" marginwidth="0" marginheight="0" scrolling="no" width="750" height="600" frameBorder="0"></iframe>
 
+As we can see from the scatter plot above, Juventus was the team whith the highest points in the season and the second highest number of shots. The correlation seems not to hold in the low end of the point spectrum (the two teams with the lowest points shooted more than teams that staid up) hinting at other variables being important in predicting the number of points at the end of the season. 
+
+# Model building
+
+In order to build a model that can predict the number of points a team will make at the end of the season the first step is to extract as many predictive features as possible. 
+Following the same procedure described above we can extract the followings:
+
+1. Shots made.
+2. Shots on target.
+3. Shots conceded. 
+4. Shots on target conceded. 
+5. Corners.
+6. Corners conceded. 
+
+The second step will be to feed these features to some kind of regression model. We can use part of our dataset to train the model and part to test the accuracy of it and then draw some conclusion. 
+
+For this exercise one can use a simple linear regression model.  
+{% highlight python %}
+df = pd.DataFrame.from_csv("../data/serieA.csv")
+
+features = df[["shots","shots_ontarget","shots_conceded","shots_conceded_ontarget","corners","corners_conceded"]]
+target   = df["points"]
+{% endhighlight %}
+
+First step is to read the dataframe where we have saved all the features we have built for our model. 
+Then one defines the _target_ and _feature_ vectors. The features vector has been discussed above, the target vector is made from the points of each team at the end of the season. 
+In this case many serie A seasons have been analysed and aggregated together in order to increase the statistics and improve the model precision. 
+
+Next step, create a Linear RegressionModel and train it. 
+
+{% highlight python %}
+from sklearn import datasets, linear_model
+regr = linear_model.LinearRegression(fit_intercept=False)
+{% endhighlight %}
+
+In order to train the model one can use cross validation, there is already a library in scikit-learn that is very easy to use. 
+
+{% highlight python %}
+from sklearn import cross_validation as cv
+scores = cv.cross_val_score(regr, features, target,cv=4)
+print("Regression scores", scores)
+print("Regression scores average %.2f" %np.mean(scores))
+print("scores variance %.2f" %np.std(scores))
+{% endhighlight %}
   
-
-# Data aggregation
-
-The team's name is not really interesting, we just want to get the number of teams that play in a certain region, per serie. 
-
-In order to create the groups we just do:
-{% highlight python %}
-groups = teams.groupby(by=["region","serie"])
-{% endhighlight %}
-
-We then create the region list dinamically, so we don't need to write it by hand:
-{% highlight python %}
-for g in groups:
-    if g[0][0] not in region_list:
-        region_list.append(g[0][0])
-{% endhighlight %}
-
-Last, we loop on the regions and fill 4 lists with the number of teams playing in each region, per serie. 
-For example, for serie A we do:
-{% highlight python %}
-for region in region_list:
-    for g in groups:
-        if g[0][0]==region and g[0][1]=="Serie A":
-            a_list.append(len(g[1]))
-            break
-    else:
-        a_list.append(0)
-{% endhighlight %}
-
-The last step is to create a dataframe from the created lists (region, serie A teams, II serie team and so on):
-{% highlight python %}
-data = pd.DataFrame({'region': region_list, 'a': a_list, 'ii': ii_list, 'iii': iii_list, 'iv': iv_list})
-{% endhighlight %}
-
-The result is the following dataframe:
-
-|   | a	| ii | iii | iv | region     | total |
-| 0	| 0	| 2	 | 6   | 9  | Abruzzo    | 17    |
-| 1	| 0	| 0	 | 2   | 2  | Bari	     | 4     |
-| 2	| 0	| 0	 | 1   | 5  | Basilicata | 6     |
-| 3	| 0	| 1	 | 1   | 6  | Bologna	 | 8     |
-| ...	| ...	| ...	 | ...   | ...  | ...	 | ...     |
-
-We save the dataframe into a csv file. 
-
-# Data Visualisation
-
-Once we have the csv file the only thing left is to link it to a map and show the data as as points or regions in the map. 
-
-For example we can show a map of Italy and color the regions with different shades, with darker shades corresponding to regions with more teams. 
-
-<iframe src="{{site.baseurl}}/js/italy-ht/italy-ht.html" marginwidth="0" marginheight="0" scrolling="no" width="750" height="800" frameBorder="0"></iframe>
-
-Hovering over the regions you get an overview of how the teams in the selected region are distributed by serie. 
-
+Here we simply use a 4-fold cross validation to train the model 4 times on 4 different subsets of the original data sample. 
+At the end of each training we evaluate the score of the model and save it in a vector called score. In the case of LInear regression the score is a simple R^2. 
+All of it is done in jsut one line using the cross validation library provided by scikit-learn. 
+In our case R2=0.70±0.07 
 
 [the-numbers-game]: http://www.goodreads.com/book/show/17465493-the-numbers-game
 [football-data]: http://www.football-data.co.uk/data.php
