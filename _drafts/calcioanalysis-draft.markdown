@@ -123,7 +123,7 @@ from sklearn import datasets, linear_model
 regr = linear_model.LinearRegression(fit_intercept=False)
 {% endhighlight %}
 
-In order to train the model one can use cross validation, there is already a library in scikit-learn that is very easy to use. 
+In order to train the model one can use cross validation, there is already a library in [scikit-learn][scikit-link] that is very easy to use. 
 
 {% highlight python %}
 from sklearn import cross_validation as cv
@@ -135,9 +135,16 @@ print("scores variance %.2f" %np.std(scores))
   
 Here we simply use a 4-fold cross validation to train the model 4 times on 4 different subsets of the original data sample. 
 At the end of each training we evaluate the score of the model and save it in a vector called score. In the case of LInear regression the score is a simple R^2. 
-All of it is done in jsut one line using the cross validation library provided by scikit-learn. 
+All of it is done in just one line using the cross validation library provided by scikit-learn. 
 In our case R2=0.70±0.07 
+
+# Further developments
+The amnalysis above can be improved in a number of ways. From analysing a bigger dataset to adding more features to applying a different model, like a regression tree for example. 
+The general approach wuold be the same however. Split the data sample in N-folds, use one fold to test the model and train the model on the remaining (N-1) folds. Repeat for each fold and average the result to get an idea of how good is your model. 
+For an excellent introduction to the technique I recommend [this video][nfold-cv]
 
 [the-numbers-game]: http://www.goodreads.com/book/show/17465493-the-numbers-game
 [football-data]: http://www.football-data.co.uk/data.php
 [football-data-notes]: http://www.football-data.co.uk/notes.txt
+[scikit-link]: http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
+[nfold-cv]: http://blog.kaggle.com/2015/06/29/scikit-learn-video-7-optimizing-your-model-with-cross-validation/
