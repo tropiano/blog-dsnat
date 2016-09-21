@@ -64,7 +64,7 @@ d3.csv("proc_data_it_test.csv", function(error, data){
             div.transition()		
                 .duration(200)		
                 .style("opacity", .8);		
-            div.html("<b>"+d["team"]+"</b>"+"</br>"+d["points"]+" points"+"</br>"+parseInt(d["shots"])+" shots")	
+            div.html("<b>"+d["team"]+"</b>"+"</br>"+d["points"]+" points"+"</br>"+parseInt(d["shots"])	+" shots")	
                 .style("left", (d3.event.pageX) + "px")		
                 .style("top", (d3.event.pageY - 28) + "px");	
             })					
