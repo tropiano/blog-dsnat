@@ -3,7 +3,7 @@ title: Data Science is not my thing
 email: antoniotropiano@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A blog that collects all things I try (and fail) in my spare time. I have a lot.
-baseurl: "/blog-dsnat/" # the subpath of your site, e.g. /blog/
+baseurl: "/blog-dsnat" # the subpath of your site, e.g. /blog/
 url: "http://tropiano.github.io" # the base hostname & protocol for your site
 twitter_username: tropianhs
 github_username:  tropiano
