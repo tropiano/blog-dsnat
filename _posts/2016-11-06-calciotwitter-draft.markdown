@@ -25,7 +25,7 @@ df_week = pd.read_csv("http://www.football-data.co.uk/mmz4281/1617/I1.csv")
 
 Here one opens only the latest serie file and in the dataframe there are all match infos for the season, results, shots on target, corners...
 
-The next step is to calculate the features one uses in the model. This has been covered too in the [previous post]({% post_url 2016-09-21-calcioanalysis %}). These must be the same features used during model training. 
+The next step is to calculate the features one uses in the model. This has been covered too in the [previous post]({{ site.baseurl }}{% post_url 2016-09-21-calcioanalysis %}). These must be the same features used during model training. 
 
 # Model Fitting
 A step back now. When one builds a model in scikit-learn there is the option to store the trained model in a file and use it later on updated data. The process to do it is the following.
