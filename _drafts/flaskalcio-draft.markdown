@@ -1,20 +1,21 @@
 ---
 layout: post
-title:  "Football	 Analytics on Twitter"
+title:  "A quick and dirty Web App"
 categories: data
-tags: data_analysis football_data automation 
+tags: data_analysis football_data web_dev  
 ---
 # Intro
-In my previous post I showed how to create a model to predict the number of points of a football team starting from simple data. 
-I am going to show here how to use the model to create a meaningful visualisation and share it on Twitter. The idea is to publish the predicted points resulting from my model against the actual points scored by the serie A teams weekly. Also, I think it would be less time consuming and more efficient to automate the whole process.
-In this post I will explain how to write a script to:
+I believe that in the bag of tricks of a Data Scientist there must be the ability to write a quick and dirty web app. 
+A web app can be useful in many ways: 
 
-1. Extract the data published weekly on serie A match results. 
-2. Apply a pre-trained model to these data. 
-3. Publish the result on Twitter.
-4. Get the script to run following a schedule. 
+- It lets you monitor the latest model put in production in real time.
+- It shows the results of an exploratory analysis in an interactive way.   
+- It collects feedback on a model from the users and directly or indirectly label a dataset.
 
-# Data Extraction
+I used [Flask][flask] to build a quick and dirty web app. It displays the results of an analysis of football data in major European Leagues. I believe this simple web app is an [MVC][mvc] as the vast majority of the apps around. I will then describe the DataBase Model first.  
+ 
+
+# The Model 
 The data extraction process is very simple. On [this website][football-data] there are all data needed to get the features and apply a previously trained model. One can look at the previous post to understand how one can build a model from scratch. 
 
 Using pandas one can read the file directly from the website
@@ -111,8 +112,8 @@ The analysis has become a [twitter account][tropianhs-analytics] that is not man
 
 The model could also be used to assist in betting strategies. A simple one may be to identify teams in a lucky strike and sistematically bet against them. 
 
-[football-data]: http://www.football-data.co.uk/data.php
-[bar-matplot]: http://matplotlib.org/examples/api/barchart_demo.html
+[flask]: http://http://flask.pocoo.org
+[mvc]: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
 [tweepy-link]: http://www.tweepy.org/
 [twitter-app]: https://apps.twitter.com/
 [python-anywhere]: https://www.pythonanywhere.com
