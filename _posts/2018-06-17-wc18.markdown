@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "Predictions for World Cup 2018"
+categories: data
+tags: data_analysis football_data   
+---
+# Prediction and Results 
+
+| Team 1         | Team 2    | Prediction  | Result  | Odds | Won |
+|:-------------:|:----------:|:-----------:|:-------:|:----:|:---:|
+| Russia      | Saudi Arabia | 2 | 1 | 1.44 | -1.00 |
+| Egypt       | Uruguay      | 2 | 2 | 1.49 | +0.49 |
+| Portugal    | Spain        | X | X | 3.21 | +2.21 |
+| Morocco     | Iran         | X | 2 | 4.10 | -1.00 | 
+| France      | Australia    | 1 | 1 | 1.25 | +0.25 | 
+| Peru        | Denmark      | 2 | 2 | 2.29 | +1.29 |
+| Argentina   | Iceland      | 1 | X | 5.17 | -1.00 |
+| Croatia     | Nigeria      | 1 | 1 | 1.65 | +0.65 |
+| Brazil      | Switzerland  | 1 |   |
+| Costa Rica  | Serbia       | 2 |   |
+| Germany     | Mexico       | 1 |   |
+| Sweden      | Korea        | 1 |   |
+| Belgium     | Panama       | 1 |   |
+| Tunisia     | England      | 2 |   |
+| Poland      | Senegal      | X |   |
+| Colombia    | Japan        | 1 |   |
+|             |              | **Prediction Ratio** | 62.5% |
+|             |              | **Total Won** | 1.89 |
+|             |              | **Total ROI** | 23.6% |
+
+
+
+All odds are from [Odds Portal][oddsportal]
+
+# The Model 
+
+# Model Fitting
+
+
+[oddsportal]: http://www.oddsportal.com/soccer/world/world-cup-2018/results/
