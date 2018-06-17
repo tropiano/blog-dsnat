@@ -24,9 +24,9 @@ tags: data_analysis football_data
 | Tunisia     | England      | 2 |   |
 | Poland      | Senegal      | X |   |
 | Colombia    | Japan        | 1 |   |
-|             |              | **Prediction Ratio** | | | 62.5% |
-|             |              | **Total Won** | | | 1.89 |
-|             |              | **Total ROI** | | | 23.6% |
+|             |              | **Prediction Ratio** | | 62.5% |
+|             |              | **Total Won** | | 1.89 |
+|             |              | **Total ROI** | | 23.6% |
 
 
 
