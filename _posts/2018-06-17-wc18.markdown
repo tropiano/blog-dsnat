@@ -16,9 +16,9 @@ tags: data_analysis football_data
 | Peru        | Denmark      | 2 | 2 | 2.29 | +1.29 |
 | Argentina   | Iceland      | 1 | X | 5.17 | -1.00 |
 | Croatia     | Nigeria      | 1 | 1 | 1.65 | +0.65 |
-| Brazil      | Switzerland  | 1 |   |
+| Brazil      | Switzerland  | 1 | X | 4.28 | -1.00 |
 | Costa Rica  | Serbia       | 2 | 2 | 1.81 | +0.81 | 
-| Germany     | Mexico       | 1 |   |
+| Germany     | Mexico       | 1 | 2 | 7.42 | -1.00 |
 | Sweden      | Korea        | 1 |   |
 | Belgium     | Panama       | 1 |   |
 | Tunisia     | England      | 2 |   |
@@ -40,9 +40,10 @@ tags: data_analysis football_data
 | Panama      | England      | 1 |   |
 | Poland      | Colombia     | 1 |   |
 | Senegal     | Japan        | 1 |   |
-|             |              | **Prediction Ratio** | | | 66.6% |
-|             |              | **Total Won** | | | 2.70 |
-|             |              | **Total ROI** | | | 30.0% |
+|      |         |  |   |
+|             |              | **Prediction Ratio** | | | 54.5% |
+|             |              | **Total Won** | | | 0.70 |
+|             |              | **Total ROI** | | | 6.3% |
 
 
 
