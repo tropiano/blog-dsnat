@@ -20,8 +20,8 @@ tags: data_analysis football_data
 | Costa Rica  | Serbia       | 2 | 2 | 1.81 | +0.81 | 
 | Germany     | Mexico       | 1 | 2 | 7.42 | -1.00 |
 | Sweden      | Korea        | 1 | 1 | 2.25 | +1.25 |
-| Belgium     | Panama       | 1 |   |
-| Tunisia     | England      | 2 |   |
+| Belgium     | Panama       | 1 | 1 | 1.21 | +0.21 |
+| Tunisia     | England      | 2 | 2 | 1.46 | +0.46 |
 | Poland      | Senegal      | X |   |
 | Colombia    | Japan        | 1 |   |
 | Russia      | Egypt        | 2 |   |
@@ -41,9 +41,9 @@ tags: data_analysis football_data
 | Poland      | Colombia     | 1 |   |
 | Senegal     | Japan        | 1 |   |
 |      |         |  |   |
-|             |              | **Prediction Ratio** | | | 58.3% |
-|             |              | **Total Won** | | | 1.95 |
-|             |              | **Total ROI** | | | 16.2% |
+|             |              | **Prediction Ratio** | | | 64.2% |
+|             |              | **Total Won** | | | 2.62 |
+|             |              | **Total ROI** | | | 18.7% |
 
 
 
