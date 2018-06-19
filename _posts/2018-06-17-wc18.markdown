@@ -24,12 +24,12 @@ tags: data_analysis football_data
 | Sweden      | Korea        | 1 | 1 | 2.25 | +1.25 |
 | Belgium     | Panama       | 1 | 1 | 1.21 | +0.21 |
 | Tunisia     | England      | 2 | 2 | 1.46 | +0.46 |
-| Poland      | Senegal      | X |   |
+| Poland      | Senegal      | X | 2 | 3.24 | -1.00 |
 | Colombia    | Japan        | 1 | 2 | 4.92 | -1.00 |
 |      |         |  |   |
-|             |              | **Prediction Ratio** | | | 60.0% |
-|             |              | **Total Won** | | | 1.62 |
-|             |              | **Total ROI** | | | 10.8% |
+|             |              | **Prediction Ratio** | | | 56.2% |
+|             |              | **Total Won** | | | 0.62 |
+|             |              | **Total ROI** | | | 3.8% |
 
 
 ## Round 2
