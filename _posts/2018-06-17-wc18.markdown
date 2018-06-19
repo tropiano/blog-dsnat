@@ -6,6 +6,8 @@ tags: data_analysis football_data
 ---
 # Prediction and Results 
 
+## Round 1
+
 | Team 1         | Team 2    | Prediction  | Result  | Final Result Odds | Amount Won |
 |:-------------:|:----------:|:-----------:|:-------:|:-----------------:|:----------:|
 | Russia      | Saudi Arabia | 2 | 1 | 1.44 | -1.00 |
@@ -24,6 +26,16 @@ tags: data_analysis football_data
 | Tunisia     | England      | 2 | 2 | 1.46 | +0.46 |
 | Poland      | Senegal      | X |   |
 | Colombia    | Japan        | 1 | 2 | 4.92 | -1.00 |
+|      |         |  |   |
+|             |              | **Prediction Ratio** | | | 60.0% |
+|             |              | **Total Won** | | | 1.62 |
+|             |              | **Total ROI** | | | 10.8% |
+
+
+## Round 2
+
+| Team 1         | Team 2    | Prediction  | Result  | Final Result Odds | Amount Won |
+|:-------------:|:----------:|:-----------:|:-------:|:-----------------:|:----------:|
 | Russia      | Egypt        | 2 |   |
 | Uruguay     | Saudi Arabia | 2 |   |
 | Portugal    | Morocco      | 2 |   |
@@ -41,10 +53,9 @@ tags: data_analysis football_data
 | Poland      | Colombia     | 1 |   |
 | Senegal     | Japan        | 1 |   |
 |      |         |  |   |
-|             |              | **Prediction Ratio** | | | 60.0% |
-|             |              | **Total Won** | | | 1.62 |
-|             |              | **Total ROI** | | | 10.8% |
-
+|             |              | **Prediction Ratio** | | |  |
+|             |              | **Total Won** | | |  |
+|             |              | **Total ROI** | | |  |
 
 
 All odds are from [Odds Portal][oddsportal]
