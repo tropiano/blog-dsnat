@@ -23,7 +23,7 @@ tags: data_analysis football_data
 | Belgium     | Panama       | 1 | 1 | 1.21 | +0.21 |
 | Tunisia     | England      | 2 | 2 | 1.46 | +0.46 |
 | Poland      | Senegal      | X |   |
-| Colombia    | Japan        | 1 |   |
+| Colombia    | Japan        | 1 | 2 | 4.92 | -1.00 |
 | Russia      | Egypt        | 2 |   |
 | Uruguay     | Saudi Arabia | 2 |   |
 | Portugal    | Morocco      | 2 |   |
@@ -41,9 +41,9 @@ tags: data_analysis football_data
 | Poland      | Colombia     | 1 |   |
 | Senegal     | Japan        | 1 |   |
 |      |         |  |   |
-|             |              | **Prediction Ratio** | | | 64.2% |
-|             |              | **Total Won** | | | 2.62 |
-|             |              | **Total ROI** | | | 18.7% |
+|             |              | **Prediction Ratio** | | | 60.0% |
+|             |              | **Total Won** | | | 1.62 |
+|             |              | **Total ROI** | | | 10.8% |
 
 
 
