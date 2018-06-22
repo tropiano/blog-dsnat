@@ -65,4 +65,4 @@ All odds are from [Odds Portal][oddsportal]
 # Model Fitting
 
 
-[oddsportal]:   
+[oddsportal]:   http://www.oddsportal.com/soccer/world/world-cup-2018/results/
