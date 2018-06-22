@@ -45,7 +45,7 @@ tags: data_analysis football_data
 | Argentina   | Croatia      | X | 2 | 3.99 | -1.00 |
 | Iceland     | Nigeria      | 1 | 2 | 2.95 | -1.00 |
 | Brazil      | Costa Rica   | 1 | 1 | 1.20 | +0.20 |
-| Switzerland | Serbia       | X |   |
+| Switzerland | Serbia       | X | 1 | 2.94 | -1.00 |
 | Germany     | Sweden       | 1 |   |
 | Mexico      | Korea        | 1 |   |
 | Belgium     | Tunisia      | 1 |   |
@@ -53,9 +53,9 @@ tags: data_analysis football_data
 | Poland      | Colombia     | 1 |   |
 | Senegal     | Japan        | 1 |   |
 |      |         |  |   |
-|             |              | **Prediction Ratio** | | | 22.2% |
-|             |              | **Total Won** | | | -6.60 |
-|             |              | **Total ROI** | | | -73% |
+|             |              | **Prediction Ratio** | | | 20.0% |
+|             |              | **Total Won** | | | -7.60 |
+|             |              | **Total ROI** | | | -76% |
 
 
 All odds are from [Odds Portal][oddsportal]
