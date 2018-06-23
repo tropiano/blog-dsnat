@@ -28,8 +28,8 @@ tags: data_analysis football_data
 | Colombia    | Japan        | 1 | 2 | 4.92 | -1.00 |
 |      |         |  |   |
 |             |              | **Prediction Ratio** | | | 56.2% |
-|             |              | **Total Won** | | | 0.62 |
-|             |              | **Total ROI** | | | 3.8% |
+|             |              | **Total Won** | | | +0.62 |
+|             |              | **Total ROI** | | | +3.8% |
 
 
 ## Round 2
@@ -47,15 +47,15 @@ tags: data_analysis football_data
 | Brazil      | Costa Rica   | 1 | 1 | 1.20 | +0.20 |
 | Switzerland | Serbia       | X | 1 | 2.94 | -1.00 |
 | Germany     | Sweden       | 1 |   |
-| Mexico      | Korea        | 1 |   |
-| Belgium     | Tunisia      | 1 |   |
+| Mexico      | Korea        | 1 | 1 | 1.34 | +0.34 |
+| Belgium     | Tunisia      | 1 | 1 | 1.69 | +0.69 |
 | Panama      | England      | 2 |   |
 | Poland      | Colombia     | 1 |   |
 | Senegal     | Japan        | 1 |   |
 |      |         |  |   |
-|             |              | **Prediction Ratio** | | | 20.0% |
-|             |              | **Total Won** | | | -7.60 |
-|             |              | **Total ROI** | | | -76% |
+|             |              | **Prediction Ratio** | | | 33.3% |
+|             |              | **Total Won** | | | -6.57 |
+|             |              | **Total ROI** | | | -55% |
 
 
 All odds are from [Odds Portal][oddsportal]
