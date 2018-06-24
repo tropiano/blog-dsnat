@@ -50,12 +50,12 @@ tags: data_analysis football_data
 | Mexico      | Korea        | 1 | 1 | 1.34 | +0.34 |
 | Belgium     | Tunisia      | 1 | 1 | 1.69 | +0.69 |
 | Panama      | England      | 2 | 2 | 1.22 | +0.22 |
-| Poland      | Colombia     | 1 |   |
+| Poland      | Colombia     | 1 | 2 | 2.14 | -1.00 |
 | Senegal     | Japan        | 1 | X | 2.90 | -1.00 |
 |      |         |  |   |
-|             |              | **Prediction Ratio** | | | 40.0% |
-|             |              | **Total Won** | | | -6.88 |
-|             |              | **Total ROI** | | | -46% |
+|             |              | **Prediction Ratio** | | | 37.5% |
+|             |              | **Total Won** | | | -7.88 |
+|             |              | **Total ROI** | | | -49% |
 
 
 ## Round 3
