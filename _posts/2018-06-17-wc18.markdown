@@ -58,6 +58,32 @@ tags: data_analysis football_data
 |             |              | **Total ROI** | | | -47% |
 
 
+## Round 3
+
+| Team 1         | Team 2    | Prediction  | Result  | Final Result Odds | Amount Won |
+|:-------------:|:----------:|:-----------:|:-------:|:-----------------:|:----------:|
+| Russia      | Uruguay      | 2 |  |  |  |
+| Egypt       | Saudi Arabia | X |  |  |  |
+| Portugal    | Iran         | 1 |  |  |  |
+| Spain       | Morocco      | 1 |  |  |  |
+| France      | Denmark      | 1 |  |  |  | 
+| Peru        | Australia    | X |  |  |  |
+| Argentina   | Nigeria      | X |  |  |  |
+| Iceland     | Croatia      | 2 |  |  |  |
+| Brazil      | Serbia       | 1 |  |  |  |
+| Switzerland | Costa Rica   | 1 |  |  |  |
+| Germany     | Korea        | 1 |  |  |  |
+| Mexico      | Sweden       | 1 |  |  |  |
+| Belgium     | England      | 2 |  |  |  |
+| Panama      | Tunisia      | 2 |   |
+| Poland      | Japan        | 1 |   |
+| Senegal     | Colombia     | 2 |   |
+|      |         |  |   |
+|             |              | **Prediction Ratio** | | |  |
+|             |              | **Total Won** | | |  |
+|             |              | **Total ROI** | | |  |
+
+
 All odds are from [Odds Portal][oddsportal]
 
 # The Model 
