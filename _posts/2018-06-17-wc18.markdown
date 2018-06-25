@@ -64,8 +64,8 @@ tags: data_analysis football_data
 |:-------------:|:----------:|:-----------:|:-------:|:-----------------:|:----------:|
 | Russia      | Uruguay      | 2 | 2 | 2.68 | +1.68 |
 | Egypt       | Saudi Arabia | X | 2 | 5.05 | -1.00 |
-| Portugal    | Iran         | 1 |  |  |  |
-| Spain       | Morocco      | 1 |  |  |  |
+| Portugal    | Iran         | 1 | X | 3.90 | -1.00 |
+| Spain       | Morocco      | 1 | X | 4.79 | -1.00 |
 | France      | Denmark      | 1 |  |  |  | 
 | Peru        | Australia    | X |  |  |  |
 | Argentina   | Nigeria      | X |  |  |  |
@@ -79,9 +79,9 @@ tags: data_analysis football_data
 | Poland      | Japan        | 1 |   |
 | Senegal     | Colombia     | 2 |   |
 |      |         |  |   |
-|             |              | **Prediction Ratio** | | | 50% |
-|             |              | **Total Won** | | | +0.68 |
-|             |              | **Total ROI** | | | 34% |
+|             |              | **Prediction Ratio** | | | 25% |
+|             |              | **Total Won** | | | -1.32 |
+|             |              | **Total ROI** | | | -33% |
 
 
 All odds are from [Odds Portal][oddsportal]
