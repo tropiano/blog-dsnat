@@ -88,18 +88,18 @@ tags: data_analysis football_data
 
 | Team 1         | Team 2    | Prediction  | Result  | Final Result Odds | Amount Won |
 |:-------------:|:----------:|:-----------:|:-------:|:-----------------:|:----------:|
-| Argentina   | France       | 1 |  |  |  |
-| Uruguay     | Portugal     | 2 |  |  |  |
-| Spain       | Russia       | 1 |  |  |  |
-| Croatia     | Denmark      | 1 |  |  |  | 
+| Argentina   | France       | 1 | 2 | 2.38 | -1.00 |
+| Uruguay     | Portugal     | 2 | 1 | 2.96 | -1.00 |
+| Spain       | Russia       | 1 | X | 4.02 | -1.00 |
+| Croatia     | Denmark      | 1 | X | 3.18 | -1.00 | 
 | Brazil      | Mexico       | 1 |  |  |  |
 | Belgium     | Japan        | 2 |  |  |  |
 | Sweden      | Switzerland  | X |  |  |  |
 | England     | Colombia     | 1 |  |  |  |
 |      |         |  |   |
-|             |              | **Prediction Ratio** | | |  |
-|             |              | **Total Won** | | |  |
-|             |              | **Total ROI** | | |  |
+|             |              | **Prediction Ratio** | | | 0% |
+|             |              | **Total Won** | | | -4.00 |
+|             |              | **Total ROI** | | | -100% |
 
 
 All odds are from [Odds Portal][oddsportal]
