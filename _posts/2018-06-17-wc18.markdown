@@ -95,11 +95,11 @@ tags: data_analysis football_data
 | Brazil      | Mexico       | 1 | 1 | 1.49 | +0.49 |
 | Belgium     | Japan        | 2 | 1 | 1.41 | -1.00 |
 | Sweden      | Switzerland  | X | 1 | 3.27 | -1.00 |
-| England     | Colombia     | 1 |  |  |  |
+| England     | Colombia     | 1 | X | 3.09 | -1.00 |
 |      |         |  |   |
-|             |              | **Prediction Ratio** | | | 14% |
-|             |              | **Total Won** | | | -5.51 |
-|             |              | **Total ROI** | | | -79% |
+|             |              | **Prediction Ratio** | | | 12.5% |
+|             |              | **Total Won** | | | -6.51 |
+|             |              | **Total ROI** | | | -81% |
 
 
 All odds are from [Odds Portal][oddsportal]
