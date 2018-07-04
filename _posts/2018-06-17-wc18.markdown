@@ -102,6 +102,20 @@ tags: data_analysis football_data
 |             |              | **Total ROI** | | | -81% |
 
 
+## Quarter Finals
+
+| Team 1         | Team 2    | Prediction  | Result  | Final Result Odds | Amount Won |
+|:-------------:|:----------:|:-----------:|:-------:|:-----------------:|:----------:|
+| Uruguay     | France       | 2 |  |  | |
+| Brazil      | Belgium      | 1 |  |  | |
+| Sweden      | England      | X |  |  | |
+| Russia      | Croatia      | 2 |  |  | | 
+|      |         |  |   |
+|             |              | **Prediction Ratio** | | | |
+|             |              | **Total Won** | | | |
+|             |              | **Total ROI** | | |  |
+
+
 All odds are from [Odds Portal][oddsportal]
 
 # The Model 
