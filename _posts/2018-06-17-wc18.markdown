@@ -106,14 +106,14 @@ tags: data_analysis football_data
 
 | Team 1         | Team 2    | Prediction  | Result  | Final Result Odds | Amount Won |
 |:-------------:|:----------:|:-----------:|:-------:|:-----------------:|:----------:|
-| Uruguay     | France       | 2 |  |  | |
+| Uruguay     | France       | 2 | 2 | 2.00 | +1.00 |
 | Brazil      | Belgium      | 1 |  |  | |
 | Sweden      | England      | X |  |  | |
 | Russia      | Croatia      | 2 |  |  | | 
 |      |         |  |   |
-|             |              | **Prediction Ratio** | | | |
-|             |              | **Total Won** | | | |
-|             |              | **Total ROI** | | |  |
+|             |              | **Prediction Ratio** | | | 100% |
+|             |              | **Total Won** | | | +1.00 |
+|             |              | **Total ROI** | | | +100% |
 
 
 All odds are from [Odds Portal][oddsportal]
