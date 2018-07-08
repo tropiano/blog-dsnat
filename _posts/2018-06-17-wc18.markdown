@@ -109,11 +109,11 @@ tags: data_analysis football_data
 | Uruguay     | France       | 2 | 2 | 2.00 | +1.00 |
 | Brazil      | Belgium      | 1 | 2 | 3.67 | -1.00 |
 | Sweden      | England      | X | 2 | 1.85 | -1.00 |
-| Russia      | Croatia      | 2 |  |  | | 
+| Russia      | Croatia      | 2 | X | 3.14 | -1.00 | 
 |      |         |  |   |
-|             |              | **Prediction Ratio** | | | 33% |
-|             |              | **Total Won** | | | -1.00 |
-|             |              | **Total ROI** | | | -33% |
+|             |              | **Prediction Ratio** | | | 25% |
+|             |              | **Total Won** | | | -3.00 |
+|             |              | **Total ROI** | | | -75% |
 
 
 All odds are from [Odds Portal][oddsportal]
