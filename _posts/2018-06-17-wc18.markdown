@@ -116,6 +116,17 @@ tags: data_analysis football_data
 |             |              | **Total ROI** | | | -75% |
 
 
+## Semi Finals
+
+| Team 1         | Team 2    | Prediction  | Result  | Final Result Odds | Amount Won |
+|:--------------:|:----------:|:-----------:|:-------:|:-----------------:|:----------:|
+| France         | Belgium    | 1 |  |  |  |
+| England        | Croatia    | 1 |  |  |  |
+|                |            |   |   |
+|             |              | **Prediction Ratio** | | |  |
+|             |              | **Total Won** | | |  |
+|             |              | **Total ROI** | | |  |
+
 All odds are from [Odds Portal][oddsportal]
 
 # The Model 
