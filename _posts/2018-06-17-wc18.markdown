@@ -131,12 +131,12 @@ tags: data_analysis football_data
 
 | Team 1         | Team 2    | Prediction  | Result  | Final Result Odds | Amount Won |
 |:--------------:|:----------:|:-----------:|:-------:|:-----------------:|:----------:|
-| France         | Croatia    | 1 |  |  | |
-| England        | Belgium    | 1 |  |  | |
+| France         | Croatia    | 1 | 1 | 2.10 | +1.10 |
+| England        | Belgium    | 1 | 2 | 2.20 | -1.00 |
 |                |            |   |   |
-|             |              | **Prediction Ratio** | | |  |
-|             |              | **Total Won** | | |  |
-|             |              | **Total ROI** | | |  |
+|             |              | **Prediction Ratio** | | | 50% |
+|             |              | **Total Won** | | | +0.10 |
+|             |              | **Total ROI** | | | 5% |
 
 
 All odds are from [Odds Portal][oddsportal]
